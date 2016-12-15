@@ -1,0 +1,61 @@
+body {
+  padding-top: 45px;
+}
+
+.ui.main.menu {
+
+}
+
+.ui.main.menu .logo img {
+  width: 20%;
+}
+
+.ui.pushable{
+}
+
+main {
+  width: 85%;
+  position: relative;
+  left: 15%;
+}
+
+.ui.inverted.sidebar.menu {
+  background: coral;
+  position: fixed;
+  top: 45px;
+  box-shadow: none;
+  border: none;
+  width: 15%;
+  padding: 20px 0;
+  height: 90vh;
+}
+
+.ui.vertical.sidebar.menu .item {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.ui.vertical.sidebar.menu .heading {
+  opacity: 0.6;
+  font-size: 17px;
+}
+
+.ui.vertical.sidebar.menu .item:active {
+  background: #fff;
+  color: black;
+}
+
+.ui.vertical.sidebar.menu .chart-type {
+  margin-bottom: 20px;
+}
+
+/* CHART SECTION */
+#chartContainer {
+  margin: 0 auto;
+  padding-left: 5%;
+}
+
+#chartContainer svg {
+  display: block;
+  margin: 60px 0;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard | Alluvium</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.alluvium.io/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <!-- initial setup -->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script>
+      System.config({
+        paths: { 'npm': 'node_modules/' },
+        map: {
+          'app': 'js',
+          'redux': 'npm/redux/dist/redux.min.js',
+          'react': 'npm/react/dist/react.min.js',
+          'react-dom': 'npm/react-dom/dist/react-dom.min.js'
+        },
+        packages: { app: { main: './app.js', defaultExtension: 'js' } }
+      });
+      System.import('app').catch((err) => console.error(err));
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="ui inverted fixed huge main menu">
+        <div class="item logo">
+          <img src="https://static1.squarespace.com/static/573cd02907eaa09185fb7336/t/573e300345bf219b6da345f9/1463693317435/wordmark-480-white.png">
+        </div>
+        <div class="ui right disabled item">
+          Menu&nbsp;<i class="content icon"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="ui vertical visible fixed inverted inline sidebar menu">
+      <h3 class="item heading">Charts <small>(click to view)</small></h3>
+
+      <div class="chart-type">
+        <a class="item" href="#yearly-chart">Yearly</a>
+        <!-- line chart legend -->
+        <div class="legend">
+          <div class="item key-wrapper">
+            <p><span class="key line-key main"></span>Machine</p>
+          </div>
+          <div class="item key-wrapper">
+            <p><span class="key line-key sub1"></span>Sub-component 1</p>
+          </div>
+          <div class="item key-wrapper">
+            <p><span class="key line-key sub2"></span>Sub-component 2</p>
+          </div>
+          <div class="item key-wrapper">
+            <p><span class="key line-key sub3"></span>Sub-component 3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-type">
+        <a class="item" href="#monthly-chart">Monthly</a>
+        <!-- bullet legend -->
+        <div class="legend">
+          <div class="item key-wrapper">
+            <p><span class="key bar-key primary"></span>Predicted Power Consumption</p>
+          </div>
+          <div class="item key-wrapper">
+            <p><span class="key bar-key secondary"></span>Power Consumption</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-type">
+        <a class="item" href="#daily-chart">10-day</a>
+        <!-- bullet legend -->
+        <div class="legend">
+          <div class="item key-wrapper">
+            <p><span class="key bar-key primary"></span>Predicted Power Consumption</p>
+          </div>
+          <div class="item key-wrapper">
+            <p><span class="key bar-key secondary"></span>Power Consumption</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="charts-section">
+      <div class="container">
+       <div id="chartContainer"></div>
+      </div>
+    </main>
+
+    <!-- SCRIPTS -->
+    <!-- vendor scripts -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+    <!-- app scripts -->
+    <script src="assets/js/app.js"></script>
+  </body>
+
+</html>

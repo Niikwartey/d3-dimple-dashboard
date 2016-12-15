@@ -1,0 +1,113 @@
+svg {
+	padding-top: 50px;
+}
+
+.dimple-axis {
+	font-size: 18px !important;
+}
+
+.dimple-line {
+	stroke: teal;
+}
+
+.storyboard-label {
+	font-size: 19px;
+}
+
+.yearly-trend-chart .dimple-bar {
+	fill: #eee;
+	stroke: #eee;
+}
+
+.yearly-trend-chart .dimple-marker {
+	display: none;
+}
+
+.short-term-chart .dimple-bar {
+	fill: #eee;
+	stroke: #eee;
+}
+
+/* STACKED CHARTS */
+.stacked-chart:not(.placeholder) {
+	position: absolute;
+	top: -60px;
+	/*border: 1px solid;*/
+}
+
+.stacked-chart.placeholder {
+	visibility: hidden;
+}
+
+.stacked-chart .dimple-line {
+	stroke-width: 2;
+}
+
+.stacked-chart.main .dimple-line {
+	stroke: teal;
+	stroke-width: 5;
+}
+.stacked-chart.sub1 .dimple-line {
+	stroke: blue;
+}
+.stacked-chart.sub2 .dimple-line {
+	stroke: yellow;
+}
+.stacked-chart.sub3 .dimple-line {
+	stroke: pink;
+}
+
+.dimple-series-1.dimple-bar {
+	fill: teal;
+	opacity: 0.6;
+	width: 20px;
+}
+
+
+/* LEGEND */
+
+.legend p .key{
+	margin-right: 10px;
+}
+
+/* line */
+.legend p .line-key{
+	display: inline-block;
+	width: 20px;
+	height: 6px;
+	border-top: 3px solid #eee;
+}
+
+.legend p .line-key.main { border-color: teal }
+.legend p .line-key.sub1 { border-color: blue }
+.legend p .line-key.sub2 { border-color: yellow }
+.legend p .line-key.sub3 { border-color: pink }
+
+.legend p {
+	font-size: 15px;
+}
+
+/* bullet */
+.legend p .bar-key {
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background: #eee;
+}
+
+
+.legend .key-wrapper  {
+	padding-top: 0 !important;
+	padding-bottom: 10px !important;
+}
+
+.legend .key-wrapper p {
+	display: inline-block;
+}
+
+
+.legend .bar-key.primary {
+	background: teal;
+	opacity: 0.7;
+}
+
