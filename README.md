@@ -1,4 +1,4 @@
-# Alluvium Dashboard
+# Simple D3/Dimple Dashboard
 
 ## Getting Started
 
